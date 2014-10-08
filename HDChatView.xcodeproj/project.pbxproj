@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09CF221719E4D4FB009097D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CF221619E4D4FB009097D4 /* Foundation.framework */; };
+		09CF221919E4D4FB009097D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CF221819E4D4FB009097D4 /* CoreGraphics.framework */; };
+		09CF221B19E4D4FB009097D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CF221A19E4D4FB009097D4 /* UIKit.framework */; };
+		09CF222119E4D4FB009097D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09CF221F19E4D4FB009097D4 /* InfoPlist.strings */; };
+		09CF222319E4D4FB009097D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF222219E4D4FB009097D4 /* main.m */; };
+		09CF222719E4D4FB009097D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF222619E4D4FB009097D4 /* AppDelegate.m */; };
+		09CF222A19E4D4FB009097D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09CF222819E4D4FB009097D4 /* Main.storyboard */; };
+		09CF222D19E4D4FB009097D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF222C19E4D4FB009097D4 /* ViewController.m */; };
+		09CF222F19E4D4FB009097D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09CF222E19E4D4FB009097D4 /* Images.xcassets */; };
+		09CF223619E4D4FB009097D4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CF223519E4D4FB009097D4 /* XCTest.framework */; };
+		09CF223719E4D4FB009097D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CF221619E4D4FB009097D4 /* Foundation.framework */; };
+		09CF223819E4D4FB009097D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CF221A19E4D4FB009097D4 /* UIKit.framework */; };
+		09CF224019E4D4FB009097D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09CF223E19E4D4FB009097D4 /* InfoPlist.strings */; };
+		09CF224219E4D4FB009097D4 /* HDChatViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF224119E4D4FB009097D4 /* HDChatViewTests.m */; };
+		09CF225619E4D55F009097D4 /* HDChatTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF225219E4D55F009097D4 /* HDChatTextView.m */; };
+		09CF226D19E4D5DB009097D4 /* HDChatMoreItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF226919E4D5DB009097D4 /* HDChatMoreItemView.m */; };
+		09CF226E19E4D5DB009097D4 /* HDChatMoreItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09CF226A19E4D5DB009097D4 /* HDChatMoreItemView.xib */; };
+		09CF226F19E4D5DB009097D4 /* HDChatMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF226C19E4D5DB009097D4 /* HDChatMoreView.m */; };
+		09CF227C19E4DD69009097D4 /* Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF227319E4DD69009097D4 /* Emoji.m */; };
+		09CF227D19E4DD69009097D4 /* EmojiEmoticons.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF227519E4DD69009097D4 /* EmojiEmoticons.m */; };
+		09CF227E19E4DD69009097D4 /* EmojiMapSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF227719E4DD69009097D4 /* EmojiMapSymbols.m */; };
+		09CF227F19E4DD69009097D4 /* EmojiPictographs.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF227919E4DD69009097D4 /* EmojiPictographs.m */; };
+		09CF228019E4DD69009097D4 /* EmojiTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF227B19E4DD69009097D4 /* EmojiTransport.m */; };
+		09CF228319E4E27C009097D4 /* HDChatEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF228219E4E27C009097D4 /* HDChatEmojiView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09CF223919E4D4FB009097D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09CF220B19E4D4FB009097D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09CF221219E4D4FB009097D4;
+			remoteInfo = HDChatView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09CF221319E4D4FB009097D4 /* HDChatView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDChatView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09CF221619E4D4FB009097D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09CF221819E4D4FB009097D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		09CF221A19E4D4FB009097D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09CF221E19E4D4FB009097D4 /* HDChatView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HDChatView-Info.plist"; sourceTree = "<group>"; };
+		09CF222019E4D4FB009097D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09CF222219E4D4FB009097D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09CF222419E4D4FB009097D4 /* HDChatView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDChatView-Prefix.pch"; sourceTree = "<group>"; };
+		09CF222519E4D4FB009097D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09CF222619E4D4FB009097D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09CF222919E4D4FB009097D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09CF222B19E4D4FB009097D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		09CF222C19E4D4FB009097D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		09CF222E19E4D4FB009097D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		09CF223419E4D4FB009097D4 /* HDChatViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDChatViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09CF223519E4D4FB009097D4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		09CF223D19E4D4FB009097D4 /* HDChatViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HDChatViewTests-Info.plist"; sourceTree = "<group>"; };
+		09CF223F19E4D4FB009097D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09CF224119E4D4FB009097D4 /* HDChatViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDChatViewTests.m; sourceTree = "<group>"; };
+		09CF225119E4D55F009097D4 /* HDChatTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDChatTextView.h; sourceTree = "<group>"; };
+		09CF225219E4D55F009097D4 /* HDChatTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDChatTextView.m; sourceTree = "<group>"; };
+		09CF226819E4D5DB009097D4 /* HDChatMoreItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDChatMoreItemView.h; sourceTree = "<group>"; };
+		09CF226919E4D5DB009097D4 /* HDChatMoreItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDChatMoreItemView.m; sourceTree = "<group>"; };
+		09CF226A19E4D5DB009097D4 /* HDChatMoreItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDChatMoreItemView.xib; sourceTree = "<group>"; };
+		09CF226B19E4D5DB009097D4 /* HDChatMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDChatMoreView.h; sourceTree = "<group>"; };
+		09CF226C19E4D5DB009097D4 /* HDChatMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDChatMoreView.m; sourceTree = "<group>"; };
+		09CF227219E4DD69009097D4 /* Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emoji.h; sourceTree = "<group>"; };
+		09CF227319E4DD69009097D4 /* Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Emoji.m; sourceTree = "<group>"; };
+		09CF227419E4DD69009097D4 /* EmojiEmoticons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiEmoticons.h; sourceTree = "<group>"; };
+		09CF227519E4DD69009097D4 /* EmojiEmoticons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiEmoticons.m; sourceTree = "<group>"; };
+		09CF227619E4DD69009097D4 /* EmojiMapSymbols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiMapSymbols.h; sourceTree = "<group>"; };
+		09CF227719E4DD69009097D4 /* EmojiMapSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiMapSymbols.m; sourceTree = "<group>"; };
+		09CF227819E4DD69009097D4 /* EmojiPictographs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiPictographs.h; sourceTree = "<group>"; };
+		09CF227919E4DD69009097D4 /* EmojiPictographs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiPictographs.m; sourceTree = "<group>"; };
+		09CF227A19E4DD69009097D4 /* EmojiTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiTransport.h; sourceTree = "<group>"; };
+		09CF227B19E4DD69009097D4 /* EmojiTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiTransport.m; sourceTree = "<group>"; };
+		09CF228119E4E27C009097D4 /* HDChatEmojiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDChatEmojiView.h; sourceTree = "<group>"; };
+		09CF228219E4E27C009097D4 /* HDChatEmojiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDChatEmojiView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09CF221019E4D4FB009097D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CF221919E4D4FB009097D4 /* CoreGraphics.framework in Frameworks */,
+				09CF221B19E4D4FB009097D4 /* UIKit.framework in Frameworks */,
+				09CF221719E4D4FB009097D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CF223119E4D4FB009097D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CF223619E4D4FB009097D4 /* XCTest.framework in Frameworks */,
+				09CF223819E4D4FB009097D4 /* UIKit.framework in Frameworks */,
+				09CF223719E4D4FB009097D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09CF220A19E4D4FB009097D4 = {
+			isa = PBXGroup;
+			children = (
+				09CF221C19E4D4FB009097D4 /* HDChatView */,
+				09CF223B19E4D4FB009097D4 /* HDChatViewTests */,
+				09CF221519E4D4FB009097D4 /* Frameworks */,
+				09CF221419E4D4FB009097D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09CF221419E4D4FB009097D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09CF221319E4D4FB009097D4 /* HDChatView.app */,
+				09CF223419E4D4FB009097D4 /* HDChatViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09CF221519E4D4FB009097D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09CF221619E4D4FB009097D4 /* Foundation.framework */,
+				09CF221819E4D4FB009097D4 /* CoreGraphics.framework */,
+				09CF221A19E4D4FB009097D4 /* UIKit.framework */,
+				09CF223519E4D4FB009097D4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09CF221C19E4D4FB009097D4 /* HDChatView */ = {
+			isa = PBXGroup;
+			children = (
+				09CF224B19E4D55F009097D4 /* ChatTextView */,
+				09CF222519E4D4FB009097D4 /* AppDelegate.h */,
+				09CF222619E4D4FB009097D4 /* AppDelegate.m */,
+				09CF222819E4D4FB009097D4 /* Main.storyboard */,
+				09CF222B19E4D4FB009097D4 /* ViewController.h */,
+				09CF222C19E4D4FB009097D4 /* ViewController.m */,
+				09CF222E19E4D4FB009097D4 /* Images.xcassets */,
+				09CF221D19E4D4FB009097D4 /* Supporting Files */,
+			);
+			path = HDChatView;
+			sourceTree = "<group>";
+		};
+		09CF221D19E4D4FB009097D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09CF221E19E4D4FB009097D4 /* HDChatView-Info.plist */,
+				09CF221F19E4D4FB009097D4 /* InfoPlist.strings */,
+				09CF222219E4D4FB009097D4 /* main.m */,
+				09CF222419E4D4FB009097D4 /* HDChatView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09CF223B19E4D4FB009097D4 /* HDChatViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				09CF224119E4D4FB009097D4 /* HDChatViewTests.m */,
+				09CF223C19E4D4FB009097D4 /* Supporting Files */,
+			);
+			path = HDChatViewTests;
+			sourceTree = "<group>";
+		};
+		09CF223C19E4D4FB009097D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09CF223D19E4D4FB009097D4 /* HDChatViewTests-Info.plist */,
+				09CF223E19E4D4FB009097D4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09CF224B19E4D55F009097D4 /* ChatTextView */ = {
+			isa = PBXGroup;
+			children = (
+				09CF225119E4D55F009097D4 /* HDChatTextView.h */,
+				09CF225219E4D55F009097D4 /* HDChatTextView.m */,
+				09CF227019E4DD69009097D4 /* 表情 */,
+				09CF226719E4D5DB009097D4 /* 更多 */,
+			);
+			path = ChatTextView;
+			sourceTree = "<group>";
+		};
+		09CF226719E4D5DB009097D4 /* 更多 */ = {
+			isa = PBXGroup;
+			children = (
+				09CF226819E4D5DB009097D4 /* HDChatMoreItemView.h */,
+				09CF226919E4D5DB009097D4 /* HDChatMoreItemView.m */,
+				09CF226A19E4D5DB009097D4 /* HDChatMoreItemView.xib */,
+				09CF226B19E4D5DB009097D4 /* HDChatMoreView.h */,
+				09CF226C19E4D5DB009097D4 /* HDChatMoreView.m */,
+			);
+			path = "更多";
+			sourceTree = "<group>";
+		};
+		09CF227019E4DD69009097D4 /* 表情 */ = {
+			isa = PBXGroup;
+			children = (
+				09CF227119E4DD69009097D4 /* emoji */,
+				09CF228119E4E27C009097D4 /* HDChatEmojiView.h */,
+				09CF228219E4E27C009097D4 /* HDChatEmojiView.m */,
+			);
+			path = "表情";
+			sourceTree = "<group>";
+		};
+		09CF227119E4DD69009097D4 /* emoji */ = {
+			isa = PBXGroup;
+			children = (
+				09CF227219E4DD69009097D4 /* Emoji.h */,
+				09CF227319E4DD69009097D4 /* Emoji.m */,
+				09CF227419E4DD69009097D4 /* EmojiEmoticons.h */,
+				09CF227519E4DD69009097D4 /* EmojiEmoticons.m */,
+				09CF227619E4DD69009097D4 /* EmojiMapSymbols.h */,
+				09CF227719E4DD69009097D4 /* EmojiMapSymbols.m */,
+				09CF227819E4DD69009097D4 /* EmojiPictographs.h */,
+				09CF227919E4DD69009097D4 /* EmojiPictographs.m */,
+				09CF227A19E4DD69009097D4 /* EmojiTransport.h */,
+				09CF227B19E4DD69009097D4 /* EmojiTransport.m */,
+			);
+			path = emoji;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09CF221219E4D4FB009097D4 /* HDChatView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09CF224519E4D4FB009097D4 /* Build configuration list for PBXNativeTarget "HDChatView" */;
+			buildPhases = (
+				09CF220F19E4D4FB009097D4 /* Sources */,
+				09CF221019E4D4FB009097D4 /* Frameworks */,
+				09CF221119E4D4FB009097D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HDChatView;
+			productName = HDChatView;
+			productReference = 09CF221319E4D4FB009097D4 /* HDChatView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09CF223319E4D4FB009097D4 /* HDChatViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09CF224819E4D4FB009097D4 /* Build configuration list for PBXNativeTarget "HDChatViewTests" */;
+			buildPhases = (
+				09CF223019E4D4FB009097D4 /* Sources */,
+				09CF223119E4D4FB009097D4 /* Frameworks */,
+				09CF223219E4D4FB009097D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09CF223A19E4D4FB009097D4 /* PBXTargetDependency */,
+			);
+			name = HDChatViewTests;
+			productName = HDChatViewTests;
+			productReference = 09CF223419E4D4FB009097D4 /* HDChatViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09CF220B19E4D4FB009097D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "张达棣";
+				TargetAttributes = {
+					09CF223319E4D4FB009097D4 = {
+						TestTargetID = 09CF221219E4D4FB009097D4;
+					};
+				};
+			};
+			buildConfigurationList = 09CF220E19E4D4FB009097D4 /* Build configuration list for PBXProject "HDChatView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09CF220A19E4D4FB009097D4;
+			productRefGroup = 09CF221419E4D4FB009097D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09CF221219E4D4FB009097D4 /* HDChatView */,
+				09CF223319E4D4FB009097D4 /* HDChatViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09CF221119E4D4FB009097D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CF226E19E4D5DB009097D4 /* HDChatMoreItemView.xib in Resources */,
+				09CF222F19E4D4FB009097D4 /* Images.xcassets in Resources */,
+				09CF222119E4D4FB009097D4 /* InfoPlist.strings in Resources */,
+				09CF222A19E4D4FB009097D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CF223219E4D4FB009097D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CF224019E4D4FB009097D4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09CF220F19E4D4FB009097D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CF227D19E4DD69009097D4 /* EmojiEmoticons.m in Sources */,
+				09CF226D19E4D5DB009097D4 /* HDChatMoreItemView.m in Sources */,
+				09CF228019E4DD69009097D4 /* EmojiTransport.m in Sources */,
+				09CF228319E4E27C009097D4 /* HDChatEmojiView.m in Sources */,
+				09CF222D19E4D4FB009097D4 /* ViewController.m in Sources */,
+				09CF227F19E4DD69009097D4 /* EmojiPictographs.m in Sources */,
+				09CF227E19E4DD69009097D4 /* EmojiMapSymbols.m in Sources */,
+				09CF222719E4D4FB009097D4 /* AppDelegate.m in Sources */,
+				09CF226F19E4D5DB009097D4 /* HDChatMoreView.m in Sources */,
+				09CF222319E4D4FB009097D4 /* main.m in Sources */,
+				09CF227C19E4DD69009097D4 /* Emoji.m in Sources */,
+				09CF225619E4D55F009097D4 /* HDChatTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CF223019E4D4FB009097D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CF224219E4D4FB009097D4 /* HDChatViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09CF223A19E4D4FB009097D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09CF221219E4D4FB009097D4 /* HDChatView */;
+			targetProxy = 09CF223919E4D4FB009097D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09CF221F19E4D4FB009097D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09CF222019E4D4FB009097D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		09CF222819E4D4FB009097D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09CF222919E4D4FB009097D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09CF223E19E4D4FB009097D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09CF223F19E4D4FB009097D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09CF224319E4D4FB009097D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09CF224419E4D4FB009097D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09CF224619E4D4FB009097D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HDChatView/HDChatView-Prefix.pch";
+				INFOPLIST_FILE = "HDChatView/HDChatView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		09CF224719E4D4FB009097D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HDChatView/HDChatView-Prefix.pch";
+				INFOPLIST_FILE = "HDChatView/HDChatView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		09CF224919E4D4FB009097D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HDChatView.app/HDChatView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HDChatView/HDChatView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HDChatViewTests/HDChatViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		09CF224A19E4D4FB009097D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HDChatView.app/HDChatView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HDChatView/HDChatView-Prefix.pch";
+				INFOPLIST_FILE = "HDChatViewTests/HDChatViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09CF220E19E4D4FB009097D4 /* Build configuration list for PBXProject "HDChatView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09CF224319E4D4FB009097D4 /* Debug */,
+				09CF224419E4D4FB009097D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09CF224519E4D4FB009097D4 /* Build configuration list for PBXNativeTarget "HDChatView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09CF224619E4D4FB009097D4 /* Debug */,
+				09CF224719E4D4FB009097D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09CF224819E4D4FB009097D4 /* Build configuration list for PBXNativeTarget "HDChatViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09CF224919E4D4FB009097D4 /* Debug */,
+				09CF224A19E4D4FB009097D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09CF220B19E4D4FB009097D4 /* Project object */;
+}

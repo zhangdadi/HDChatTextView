@@ -21,6 +21,7 @@ NSInteger const chatTextHeight = 51;
     BOOL _isShowMore;
     NSInteger _showHeight; //当前显示到界面的高度
     BOOL _isFirstGo; //是否第一次进来
+    HDChatMoreView *_moreView;
 }
 
 @property (nonatomic, strong) UIButton *soundButton;
@@ -80,13 +81,25 @@ NSInteger const chatTextHeight = 51;
     //更多按钮
     frame.origin.y = 5;
     frame.size.width = 50;
-    frame.origin.x = self.frame.size.width - frame.size.width - 10;
+    frame.origin.x = self.frame.size.width - frame.size.width - 5;
     frame.size.height = 40;
     self.sendButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _sendButton.frame = frame;
     _sendButton.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
     [_sendButton setImage:[UIImage imageNamed:@"chat_more"] forState:UIControlStateNormal];
     [_sendButton addTarget:self action:@selector(moreButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:_sendButton];
+    
+    //表情按钮
+    frame.origin.y = 5;
+    frame.size.width = 50;
+    frame.origin.x = self.frame.size.width - frame.size.width - 5;
+    frame.size.height = 40;
+    self.sendButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    _sendButton.frame = frame;
+    _sendButton.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
+    [_sendButton setImage:[UIImage imageNamed:@"face"] forState:UIControlStateNormal];
+    [_sendButton addTarget:self action:@selector(faceButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_sendButton];
     
     //输入框
@@ -123,12 +136,12 @@ NSInteger const chatTextHeight = 51;
     [self addSubview:_recordButton];
 
     //更多view
-    HDChatMoreView *moreView = [[HDChatMoreView alloc] initWithFrame:CGRectMake(0, 50, self.frame.size.width, 216)];
-    moreView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
-    [moreView setTitleArray:@[@"照片", @"拍照"] AndImageNameArray:@[@"chat_image", @"chat_photograph"]];
-    moreView.delegate = self;
+    _moreView = [[HDChatMoreView alloc] initWithFrame:CGRectMake(0, 50, self.frame.size.width, 216)];
+    _moreView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
+    [_moreView setTitleArray:@[@"照片", @"拍照"] AndImageNameArray:@[@"chat_image", @"chat_photograph"]];
+    _moreView.delegate = self;
     
-    [self addSubview:moreView];
+    [self addSubview:_moreView];
     
 }
 
@@ -139,8 +152,6 @@ NSInteger const chatTextHeight = 51;
         _showHeight = chatTextHeight;
         _firstChatTableFrame.size.height += _showHeight;
     }
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewTextDidChangeNotification:) name:UITextViewTextDidChangeNotification object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
@@ -267,16 +278,11 @@ NSInteger const chatTextHeight = 51;
     return YES;
 }
 
-//- (void)textViewDidChangeSelection:(UITextView *)textView {
-//   //IOS6上没有回调，弃用
-//    [self checkTextViewDidChange:textView];
-//}
+- (void)textViewDidChangeSelection:(UITextView *)textView {
+    [self checkTextViewDidChange:textView];
+}
 
 #pragma mark -
-
--(void)textViewTextDidChangeNotification:(NSNotification*)notification {
-    [self checkTextViewDidChange:_textView];
-}
 
 //chatTextView隐藏
 -(void)chatTextViewHideMoreNotification:(NSNotification*)notification {
@@ -350,6 +356,10 @@ NSInteger const chatTextHeight = 51;
     } else {
         [_textView becomeFirstResponder];
     }
+}
+
+- (void)faceButtonClick:(id)sender {
+    
 }
 
 - (void)sendMessage {
