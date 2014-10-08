@@ -111,16 +111,16 @@ NSInteger const chatTextHeight = 51;
     [self addSubview:_sendButton];
     
     //表情按钮
-    frame.origin.y = 5;
-    frame.size.width = 50;
-    frame.origin.x = self.frame.size.width - frame.size.width - 5;
-    frame.size.height = 40;
-    self.sendButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _sendButton.frame = frame;
-    _sendButton.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
-    [_sendButton setImage:[UIImage imageNamed:@"face"] forState:UIControlStateNormal];
-    [_sendButton addTarget:self action:@selector(faceButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:_sendButton];
+//    frame.origin.y = 5;
+//    frame.size.width = 50;
+//    frame.origin.x = self.frame.size.width - frame.size.width - 5;
+//    frame.size.height = 40;
+//    self.sendButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    _sendButton.frame = frame;
+//    _sendButton.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
+//    [_sendButton setImage:[UIImage imageNamed:@"face"] forState:UIControlStateNormal];
+//    [_sendButton addTarget:self action:@selector(faceButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self addSubview:_sendButton];
     
     //输入框
     frame.size.height = 30;
