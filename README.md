@@ -10,9 +10,11 @@ viewController使用：
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //显示聊天消息的滚动视图
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [self.view addSubview:_tableView];
     
+    //初始化聊天工具栏并使用，一行代码把聊天工具栏集合到_tableView里
     _chatTextView = [HDChatTextView creatInTableView:_tableView]; _chatTextView.delegate = self;
     [self.view addSubview:_chatTextView];	
 }
